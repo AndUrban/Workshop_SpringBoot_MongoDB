@@ -11,7 +11,6 @@ import org.springframework.context.annotation.Configuration;
 import com.andreurban.workshopmongo.domain.Post;
 import com.andreurban.workshopmongo.domain.User;
 import com.andreurban.workshopmongo.dto.AuthorDTO;
-import com.andreurban.workshopmongo.dto.AuthorDTO;
 import com.andreurban.workshopmongo.repository.PostRepository;
 import com.andreurban.workshopmongo.repository.UserRepository;
 
@@ -45,6 +44,10 @@ public class Instantiation implements CommandLineRunner {
 				new AuthorDTO(maria));
 
 		postRepository.saveAll(Arrays.asList(post1, post2));
+
+		maria.getPosts().addAll(Arrays.asList(post1, post2));
+		userRepository.save(maria);
+
 	}
 
 }
