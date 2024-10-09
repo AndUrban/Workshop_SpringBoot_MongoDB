@@ -1,52 +1,56 @@
-# Projeto Web Services com Spring Boot e JPA / Hibernate
+# Projeto MongoDB/NoSQL com Spring Boot
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/AndUrban/workshop-spring-boot-mongodb)
 
 
 # Sobre o projeto
 
-Web service é um projeto back end, oferecida pela [DevSuperior](https://devsuperior.com "Site da DevSuperior").
-Consiste em um projeto Spring Boot Java, seguindo a implementação do modelo de domínio e sendo estruturado por 
-camadas lógicas (resource, service e repository).
+O projeto MongoDb com Spring Boot, oferecida pela [DevSuperior](https://devsuperior.com "Site da DevSuperior"),
+consiste na elaboração de um sistema que simula a postagem de posts, seus autores e seus comentários.
+Utilizando o paradigma de Banco de Dados Orientado a Agregados, as informações são armazenadas em formato
+não relacional - utilizando dentro do paradigma, o modelo orientado a documentos. Nesse sistema, um conjunto de 
+objetos relacionados são tratados como uma unidade.
 
 
-## Modelo de Domínio
-![Modelo Conceitual](https://github.com/AndUrban/Assets/blob/main/Assets/webServicesSpringBoot_1.png)
-## Inteface de Domínio
-![Modelo Conceitual](https://github.com/AndUrban/Assets/blob/main/Assets/webServicesSpringBoot_2.png)
-## Camadas Lógicas (Logical Layers)
-![Modelo Conceitual](https://github.com/AndUrban/Assets/blob/main/Assets/webServicesSpringBoot_3.png)
+## Estrutura Lógica
+![Modelo Conceitual](https://github.com/AndUrban/Assets/blob/main/Assets/spring_mongodb_1.png)
+## Instanciação dos Objetos em Memória
+![Modelo Conceitual](https://github.com/AndUrban/Assets/blob/main/Assets/spring_mongodb_2.png)
+## Diagrama de Classes
+![Modelo Conceitual](https://github.com/AndUrban/Assets/blob/main/Assets/spring_mongodb_3.png)
+## Exemplo Representado em Formato JSON
+![Modelo Conceitual](https://github.com/AndUrban/Assets/blob/main/Assets/spring_mongodb_4.png)
 
 # Tecnologias utilizadas
 - Java
 - Spring Boot
-- JPA / Hibernate
-- Maven
+- MongoDB
 
 # Execução
-Pré-requisitos: JavaSE 21
+Pré-requisitos: JavaSE-21
 
 ```bash
 # clonar repositório:
-git clone https://github.com/AndUrban/workshop-springboot3-jpa.git
+git clone https://github.com/AndUrban/workshop-spring-boot-mongodb.git
 
 # Dentro da IDE, importar o projeto:
-course
+workshopmongo
 
 # Caminho para a execução:
-course/src(src/main/java)/com.myeducandoweb.course/CourseApplication.java
+workshopmongo/(src/main/java)/com.andreurban.workshopmongo/WorkshomongoApplication.java
 
+-> Inicie o MongoDB
 -> Run as Spring Boot App
+--> É possível alterar os valores das instanciações na classe/arquivo Instantiation.java
+# Caminho do arquivo
+workshopmongo/(src/main/java)/com.andreurban.workshopmongo.config/Instantiation.java
 
-# Abrir o link:
-http://localhost:8080/h2-console
+# Foi utilizado o programa Postman para rodar as requisições
 
-Conferir as seguintes informações:
-Driver class: org.h2.Driver
-JDBC URL: jdbc:h2:mem:testdb
-User Name: sa
-Password: (não tem)
-
--> Clicar em "Connect"
+# Link:
+http://localhost:8080
+# Endpoints:
+  - /users
+  - /posts
 ```
 
 # Agradecimentos
