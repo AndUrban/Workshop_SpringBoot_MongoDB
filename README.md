@@ -4,7 +4,7 @@
 
 # Sobre o projeto
 
-O projeto MongoDb com Spring Boot, oferecida pela [DevSuperior](https://devsuperior.com "Site da DevSuperior"),
+O projeto MongoDB com Spring Boot, oferecida pela [DevSuperior](https://devsuperior.com "Site da DevSuperior"),
 consiste na elaboração de um sistema que simula a postagem de posts, seus autores e seus comentários.
 Utilizando o paradigma de Banco de Dados Orientado a Agregados, as informações são armazenadas em formato
 não relacional - utilizando dentro do paradigma, o modelo orientado a documentos. Nesse sistema, um conjunto de 
