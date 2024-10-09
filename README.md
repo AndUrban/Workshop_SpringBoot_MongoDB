@@ -1,5 +1,5 @@
 # Projeto Web Services com Spring Boot e JPA / Hibernate
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/AndUrban/workshop-springboot3-jpa/blob/main/LICENSE)
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/AndUrban/workshop-spring-boot-mongodb)
 
 
 # Sobre o projeto
